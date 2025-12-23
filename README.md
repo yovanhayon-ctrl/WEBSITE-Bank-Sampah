@@ -36,3 +36,25 @@ Jika kamu ingin mengirim (push) perubahan ke GitHub:
 
 
 
+# MENJALANKAN WEBSITE DARI GITHUB PAGES
+
+1. Buka repository:
+   https://yovanhayon-ctrl.github.io/WEBSITE-Bank-Sampah/
+
+2. Klik Settings → Pages
+
+3. Atur Source:
+   Branch : main
+   Folder : /root
+
+4. Klik Save dan tunggu ±30–60 detik
+
+5. Buka website:
+   https://yovanhayon-ctrl.github.io/WEBSITE-Bank-Sampah/
+
+
+
+
+
+
+
