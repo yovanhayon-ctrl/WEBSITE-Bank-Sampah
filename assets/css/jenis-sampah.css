@@ -1,0 +1,98 @@
+.sampah-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #1f2937;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.sampah-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.sampah-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sampah-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.sampah-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sampah-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 25px 80px rgba(16, 185, 129, 0.3);
+}
+
+.sampah-icon {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.sampah-icon.botol {
+  color: #3b82f6;
+}
+.sampah-icon.kardus {
+  color: #eab308;
+}
+.sampah-icon.logam {
+  color: #f59e0b;
+}
+.sampah-icon.organic {
+  color: #10b981;
+}
+.sampah-icon.plastik {
+  color: #8b5cf6;
+}
+.sampah-icon.kaca {
+  color: #ec4899;
+}
+
+.harga {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #10b981;
+  margin: 1rem 0;
+  text-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+.sampah-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+@media (max-width: 768px) {
+  .sampah-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

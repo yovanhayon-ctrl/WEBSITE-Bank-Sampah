@@ -1,0 +1,139 @@
+/* KONTAK SECTION */
+
+.kontak-section {
+  padding: 6rem 0;
+  background: #f8fafc;
+}
+
+.kontak-section {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #1f2937;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 5rem;
+  color: #1f2937;
+  position: relative;
+}
+
+/* GRID UTAMA (INFO + MAP) */
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* KONTAK INFO (HORIZONTAL) */
+
+.kontak-info {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* ITEM KONTAK */
+.kontak-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+/* ICON */
+.kontak-item i {
+  font-size: 1.6rem;
+  color: #10b981;
+  margin-top: 4px;
+  min-width: 26px;
+}
+
+/* TEKS */
+.kontak-item h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.kontak-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* MAP */
+
+.kontak-map iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .kontak-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-map iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .kontak-info {
+    flex-direction: column; /* turun ke bawah di HP */
+    gap: 1.5rem;
+  }
+
+  .kontak-section {
+    padding: 4rem 0;
+  }
+
+  .kontak-section .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* ===============================
+   FIX RUANG KOSONG KE FOOTER
+   =============================== */
+
+/* Pastikan kontak section tidak memberi jarak berlebih ke footer */
+.kontak-section {
+  margin-bottom: 0 !important;
+  padding-bottom: 4rem; /* tetap ada napas visual */
+}
+
+/* Hilangkan margin collapse dari judul terakhir */
+.kontak-section .section-title:last-child {
+  margin-bottom: 0;
+}
+
+/* Jika ini section terakhir sebelum footer */
+.kontak-section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Footer nempel langsung */
+footer {
+  margin-top: 0 !important;
+}
+
+/* Reset bawaan browser */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

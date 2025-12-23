@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran - Bank Sampah</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/pendaftaran.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-recycle logo-icon"></i>
+          <span>Bank Sampah</span>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><i class="fas fa-home"></i> Beranda</a
+            >
+          </li>
+          <li>
+            <a href="tentang.html" class="nav-link"
+              ><i class="fas fa-info-circle"></i> Tentang</a
+            >
+          </li>
+          <li>
+            <a href="jenis-sampah.html" class="nav-link"
+              ><i class="fas fa-trash"></i> Jenis Sampah</a
+            >
+          </li>
+          <li>
+            <a href="cara-menabung.html" class="nav-link"
+              ><i class="fas fa-piggy-bank"></i> Cara Menabung</a
+            >
+          </li>
+          <li>
+            <a href="pendaftaran.html" class="nav-link active"
+              ><i class="fas fa-user-plus"></i> Pendaftaran</a
+            >
+          </li>
+          <li>
+            <a href="kontak.html" class="nav-link"
+              ><i class="fas fa-phone"></i> Kontak</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section class="form-section">
+        <div class="container">
+          <div class="form-container">
+            <h2 class="section-title">Daftar Menjadi Nasabah</h2>
+            <p class="form-subtitle">Gratis! Isi data di bawah ini</p>
+
+            <form class="daftar-form" id="daftarForm">
+              <div class="form-grid">
+                <div class="form-group nama">
+                  <label><i class="fas fa-user"></i> Nama Lengkap</label>
+                  <input type="text" placeholder="Masukkan nama lengkap" />
+                </div>
+
+                <div class="form-group nik">
+                  <label><i class="fas fa-id-card"></i> NIK (16 digit)</label>
+                  <input
+                    type="text"
+                    maxlength="16"
+                    placeholder="1234567890123456"
+                  />
+                </div>
+
+                <div class="form-group whatsapp">
+                  <label><i class="fas fa-phone"></i> No. WhatsApp</label>
+                  <input type="tel" placeholder="081234567890" />
+                </div>
+
+                <div class="form-group alamat">
+                  <label
+                    ><i class="fas fa-map-marker-alt"></i> Alamat Lengkap</label
+                  >
+                  <textarea
+                    rows="1"
+                    class="alamat-textarea"
+                    placeholder="Jl. Contoh No. XX"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">
+                <i class="fas fa-check"></i>
+                Daftar Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Bank Sampah. Semua hak dilindungi.
+          <i class="fas fa-recycle"></i>
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/pendaftaran.js"></script>
+  </body>
+</html>

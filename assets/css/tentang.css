@@ -1,0 +1,266 @@
+/* TENTANG PAGE SPECIFIC STYLES */
+.main-content {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: auto;
+}
+
+.about-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 1rem 0;
+  margin-top: -50px;
+}
+
+.about-hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #10b981, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  top: 20px;
+}
+
+.about-hero-desc {
+  font-size: 1.4rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-lead {
+  font-size: 1.15rem;
+  color: #374151;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(16, 185, 129, 0.15);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: #10b981;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.about-mission {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-mission h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-visual {
+  text-align: center;
+}
+
+.recycle-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.recycle-icon {
+  font-size: 14rem;
+  color: #10b981;
+  position: relative;
+  z-index: 2;
+  animation: float 4s ease-in-out infinite;
+}
+
+.recycle-ring {
+  position: absolute;
+  border: 3px solid rgba(16, 185, 129, 0.3);
+  border-radius: 50%;
+  animation: pulse-ring 2s infinite;
+}
+
+.ring-1 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0s;
+}
+
+.ring-2 {
+  width: 280px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(180deg);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+}
+
+.team-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.team-card {
+  text-align: center;
+  padding: 2rem 1.25rem;
+  border-radius: 16px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-section .container {
+  overflow: hidden;
+}
+
+.team-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+.team-card:hover {
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.12);
+  background: white;
+}
+
+.team-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  box-shadow: 0 15px 40px rgba(16, 185, 129, 0.3);
+}
+
+.team-card h4 {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  .recycle-icon {
+    font-size: 10rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

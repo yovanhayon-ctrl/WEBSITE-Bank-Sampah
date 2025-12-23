@@ -1,0 +1,25 @@
+bank-sampah/
+├── index.html              # Beranda
+├── tentang.html            # Tentang
+├── jenis-sampah.html       # Jenis Sampah
+├── cara-menabung.html      # Cara Menabung
+├── pendaftaran.html        # Pendaftaran
+├── kontak.html             # Kontak
+│
+├── css/
+│   ├── base.css           # CSS global (navbar, button, dll)
+│   ├── style.css          # CSS khusus Beranda
+│   ├── tentang.css        # CSS khusus Tentang
+│   ├── jenis-sampah.css   # CSS khusus Jenis Sampah
+│   ├── cara-menabung.css  # CSS khusus Cara Menabung
+│   ├── pendaftaran.css    # CSS khusus Pendaftaran
+│   └── kontak.css         # CSS khusus Kontak
+│
+└── js/
+    ├── core.js            # JS global (navbar, utils)
+    ├── script.js          # JS khusus Beranda
+    ├── tentang.js         # JS khusus Tentang
+    ├── jenis-sampah.js    # JS khusus Jenis Sampah
+    ├── cara-menabung.js   # JS khusus Cara Menabung
+    ├── pendaftaran.js     # JS khusus Pendaftaran
+    └── kontak.js          # JS khusus Kontak
