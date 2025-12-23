@@ -1,0 +1,39 @@
+WEBSITE-BANK-SAMPAH
+│
+├── assets
+│   ├── css
+│   ├── js
+│   └── img
+│
+├── backend
+│   ├── config
+│   │   └── database.php
+│   │
+│   ├── auth
+│   │   └── login.php
+│   │
+│   ├── proses
+│   │   ├── simpan_pendaftaran.php
+│   │   ├── simpan_kontak.php
+│   │   └── simpan_jenis_sampah.php
+│   │
+│   └── api
+│       └── get_data.php
+│
+├── admin
+│   ├── index.php        ← dashboard
+│   ├── login.php
+│   ├── logout.php
+│   ├── pendaftaran.php
+│   ├── kontak.php
+│   ├── jenis-sampah.php
+│   └── assets
+│       ├── css
+│       └── js
+│
+├── index.html
+├── pendaftaran.html
+├── kontak.html
+├── jenis-sampah.html
+├── tentang.html
+└── README.md
