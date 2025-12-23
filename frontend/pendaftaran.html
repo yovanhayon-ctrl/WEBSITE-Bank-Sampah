@@ -68,25 +68,28 @@
             <h2 class="section-title">Daftar Menjadi Nasabah</h2>
             <p class="form-subtitle">Gratis! Isi data di bawah ini</p>
 
-            <form class="daftar-form" id="daftarForm">
+            <form class="daftar-form" id="daftarForm" action="../backend/proses/simpan_pendaftaran.php" method="POST">
               <div class="form-grid">
                 <div class="form-group nama">
                   <label><i class="fas fa-user"></i> Nama Lengkap</label>
-                  <input type="text" placeholder="Masukkan nama lengkap" />
+                  <input type="text" name="nama_lengkap" id="nama_lengkap" placeholder="Masukkan nama lengkap" required />
                 </div>
 
                 <div class="form-group nik">
                   <label><i class="fas fa-id-card"></i> NIK (16 digit)</label>
                   <input
                     type="text"
+                    name="nik"
+                    id="nik"
                     maxlength="16"
                     placeholder="1234567890123456"
+                    required
                   />
                 </div>
 
                 <div class="form-group whatsapp">
                   <label><i class="fas fa-phone"></i> No. WhatsApp</label>
-                  <input type="tel" placeholder="081234567890" />
+                  <input type="tel" name="no_whatsapp" id="no_whatsapp" placeholder="081234567890" required />
                 </div>
 
                 <div class="form-group alamat">
@@ -94,9 +97,12 @@
                     ><i class="fas fa-map-marker-alt"></i> Alamat Lengkap</label
                   >
                   <textarea
+                    name="alamat"
+                    id="alamat"
                     rows="1"
                     class="alamat-textarea"
                     placeholder="Jl. Contoh No. XX"
+                    required
                   ></textarea>
                 </div>
               </div>

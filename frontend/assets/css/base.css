@@ -175,6 +175,16 @@ body {
   border-radius: 2px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-center i {
+  display: block;
+  margin: 0 auto 1rem;
+  color: #9ca3af;
+}
+
 .footer {
   background: #1f2937;
   color: white;

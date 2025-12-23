@@ -65,42 +65,11 @@
       <section class="sampah-section">
         <div class="container">
           <h2 class="section-title">Jenis Sampah yang Diterima</h2>
-          <div class="sampah-grid">
-            <div class="sampah-card" data-harga="2500">
-              <i class="fas fa-bottle-water sampah-icon botol"></i>
-              <h3>Botol Plastik PET</h3>
-              <div class="harga">Rp 2.500/kg</div>
-              <p>Bersih & kering. Cuci sebelum disetor.</p>
-            </div>
-            <div class="sampah-card" data-harga="1500">
-              <i class="fas fa-box sampah-icon kardus"></i>
-              <h3>Kardus</h3>
-              <div class="harga">Rp 1.500/kg</div>
-              <p>Kering & pipih. Tanpa staples.</p>
-            </div>
-            <div class="sampah-card" data-harga="3500">
-              <i class="fas fa-coins sampah-icon logam"></i>
-              <h3>Logam (Kaleng)</h3>
-              <div class="harga">Rp 3.500/kg</div>
-              <p>Bersih dari karat & label.</p>
-            </div>
-            <div class="sampah-card" data-harga="2000">
-              <i class="fas fa-leaf sampah-icon organik"></i>
-              <h3>Sampah Organik</h3>
-              <div class="harga">Rp 2.000/kg</div>
-              <p>Kompos siap pakai. Kering.</p>
-            </div>
-            <div class="sampah-card" data-harga="1800">
-              <i class="fas fa-shopping-bag sampah-icon plastik"></i>
-              <h3>Plastik Kresek</h3>
-              <div class="harga">Rp 1.800/kg</div>
-              <p>Bersih & kering. Jenis HDPE.</p>
-            </div>
-            <div class="sampah-card" data-harga="4500">
-              <i class="fas fa-gem sampah-icon kaca"></i>
-              <h3>Kaca</h3>
-              <div class="harga">Rp 4.500/kg</div>
-              <p>Botol kaca bersih. Tanpa pecah.</p>
+          <div class="sampah-grid" id="sampahGrid">
+            <!-- Data will be loaded dynamically from backend -->
+            <div class="text-center" id="loadingMessage">
+              <i class="fas fa-spinner fa-spin fa-2x"></i>
+              <p>Memuat data jenis sampah...</p>
             </div>
           </div>
         </div>
